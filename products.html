@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products - ShopSmart</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">ShopSmart</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Product</a>
+      <a href="cart.html">Cart</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="menu-icon">&#9776;</div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Our Products</h1>
+      <p>Check out our exclusive products. Quality, style, and satisfaction guaranteed!</p>
+    </div>
+    <div class="hero-image">
+      <img src="https://img.freepik.com/free-vector/shopping-concept-illustration_114360-1085.jpg?w=740" alt="Products Illustration">
+    </div>
+  </section>
+
+  <section style="padding: 2rem 5%;">
+    <h2 style="text-align: center; margin-bottom: 2rem;">Featured Products</h2>
+    <div class="product-grid">
+      <!-- Product Cards -->
+      <div class="product-card" data-id="1" data-name="Wireless Headphones" data-price="25.00">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/71Rz4nN%2BNFL._AC_SL1500_.jpg" alt="Wireless Headphones">
+        <h3>Wireless Headphones</h3>
+        <p>$25.00</p>
+        <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="2" data-name="Smart Watch" data-price="49.99">
+        <img src="https://m.media-amazon.com/images/I/716Jq5LJKsL._AC_SL1500_.jpg" alt="Smart Watch">
+        <h3>Smart Watch</h3>
+        <p>$49.99</p>
+        <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="3" data-name="Fitness Tracker" data-price="45.00">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.2qlqsshmN4CMRXQLAGYr3wHaI1&pid=Api&P=0&h=180" alt="Fitness Tracker">
+        <h3>Fitness Tracker</h3>
+        <p>$45.00</p>
+        <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="4" data-name="Bluetooth Speaker" data-price="39.00">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.PTa4DuZ7vnfAmK-mCARqPQHaHa&pid=Api&P=0&h=180" alt="Bluetooth Speaker">
+        <h3>Bluetooth Speaker</h3>
+        <p>$39.00</p>
+        <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="5" data-name="Gaming Mouse" data-price="29.99">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.h0MCT6bCp6Yvii2Fyg1LRgHaHb&pid=Api&P=0&h=180" alt="Gaming Mouse">
+        <h3>Gaming Mouse</h3>
+        <p>$29.99</p>
+        <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="6" data-name="Mini Projector" data-price="89.99">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.Y9fQgUOey_23RLSayI90mwHaF7&pid=Api&P=0&h=180" alt="Mini Projector">
+        <h3>Mini Projector</h3>
+        <p>$89.99</p>
+        <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+      <!-- Product 7 -->
+<div class="product-card" data-id="7" data-name="Noise Cancelling Earbuds" data-price="59.99">
+  <img src="https://tse3.mm.bing.net/th?id=OIP.v09x8iU1j95SeeaOQo4OsAHaFE&pid=Api&P=0&h=180" alt="Noise Cancelling Earbuds">
+  <h3>Noise Cancelling Earbuds</h3>
+  <p>$59.99</p>
+  <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+</div>
+
+<!-- Product 8 -->
+<div class="product-card" data-id="8" data-name="4K Action Camera" data-price="99.99">
+  <img src="https://tse4.mm.bing.net/th?id=OIP.bORMAXNFW9wyfy2XjRZMAAHaHa&pid=Api&P=0&h=180" alt="4K Action Camera">
+  <h3>4K Action Camera</h3>
+  <p>$99.99</p>
+  <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+</div>
+
+<!-- Product 9 -->
+<div class="product-card" data-id="9" data-name="LED Desk Lamp" data-price="19.99">
+  <img src="https://tse2.mm.bing.net/th?id=OIP.aiJ0nDhr8-NG_YUXcckI7gHaHa&pid=Api&P=0&h=180" alt="LED Desk Lamp">
+  <h3>LED Desk Lamp</h3>
+  <p>$19.99</p>
+  <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+</div>
+
+<!-- Product 10 -->
+<div class="product-card" data-id="10" data-name="Portable Charger 20000mAh" data-price="34.50">
+  <img src="https://m.media-amazon.com/images/I/41PDQcx09HL._SL500_.jpg" alt="Portable Charger">
+  <h3>Portable Charger 20000mAh</h3>
+  <p>$34.50</p>
+  <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+</div>
+
+<!-- Product 11 -->
+<div class="product-card" data-id="11" data-name="Foldable Laptop Stand" data-price="22.00">
+  <img src="https://tse4.mm.bing.net/th?id=OIP.2HzGcVKlOj4CQRKd7QvYpwHaHa&pid=Api&P=0&h=180" alt="Laptop Stand">
+  <h3>Foldable Laptop Stand</h3>
+  <p>$22.00</p>
+  <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+</div>
+
+<!-- Product 12 -->
+<div class="product-card" data-id="12" data-name="RGB Mechanical Keyboard" data-price="79.00">
+  <img src="https://tse4.mm.bing.net/th?id=OIP.xDFxy87LvLMKwuT6JW4yOwHaDZ&pid=Api&P=0&h=180" alt="Mechanical Keyboard">
+  <h3>RGB Mechanical Keyboard</h3>
+  <p>$79.00</p>
+  <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+</div>
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
